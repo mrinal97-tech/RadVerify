@@ -1,3 +1,4 @@
+
 [
   {
     "case_id": "case_0000",
@@ -13,7 +14,8 @@
       "age": 53,
       "sex": "M",
       "indication": "chest pain"
-    }
+    },
+    "report": "FINDINGS: There is severe cardiomegaly.\nIMPRESSION: severe cardiomegaly."
   },
   {
     "case_id": "case_0001",
@@ -22,7 +24,8 @@
       "age": 31,
       "sex": "M",
       "indication": "routine pre-op"
-    }
+    },
+    "report": "FINDINGS: No acute cardiopulmonary abnormality is identified. Heart size is normal. Lungs are clear.\nIMPRESSION: No acute findings.."
   },
   {
     "case_id": "case_0002",
@@ -38,7 +41,8 @@
       "age": 45,
       "sex": "M",
       "indication": "routine pre-op"
-    }
+    },
+    "report": "FINDINGS: There is mild cardiomegaly.\nIMPRESSION: mild cardiomegaly."
   },
   {
     "case_id": "case_0003",
@@ -54,7 +58,8 @@
       "age": 87,
       "sex": "F",
       "indication": "chest pain"
-    }
+    },
+    "report": "FINDINGS: There is mild support devices.\nIMPRESSION: mild support devices."
   },
   {
     "case_id": "case_0004",
@@ -70,7 +75,8 @@
       "age": 72,
       "sex": "F",
       "indication": "post-op check"
-    }
+    },
+    "report": "FINDINGS: There is mild right atelectasis.\nIMPRESSION: mild atelectasis."
   },
   {
     "case_id": "case_0005",
@@ -79,7 +85,8 @@
       "age": 61,
       "sex": "M",
       "indication": "shortness of breath"
-    }
+    },
+    "report": "FINDINGS: No acute cardiopulmonary abnormality is identified. Heart size is normal. Lungs are clear.\nIMPRESSION: No acute findings.."
   },
   {
     "case_id": "case_0006",
@@ -95,7 +102,8 @@
       "age": 51,
       "sex": "M",
       "indication": "fever, rule out pneumonia"
-    }
+    },
+    "report": "FINDINGS: There is moderate pulmonary edema.\nIMPRESSION: moderate pulmonary edema."
   },
   {
     "case_id": "case_0007",
@@ -111,7 +119,8 @@
       "age": 88,
       "sex": "F",
       "indication": "routine pre-op"
-    }
+    },
+    "report": "FINDINGS: There is mild consolidation.\nIMPRESSION: mild consolidation."
   },
   {
     "case_id": "case_0008",
@@ -133,7 +142,8 @@
       "age": 47,
       "sex": "F",
       "indication": "shortness of breath"
-    }
+    },
+    "report": "FINDINGS: There is severe pulmonary edema. There is mild left pneumothorax.\nIMPRESSION: severe pulmonary edema; mild pneumothorax."
   },
   {
     "case_id": "case_0009",
@@ -155,7 +165,8 @@
       "age": 64,
       "sex": "M",
       "indication": "post-op check"
-    }
+    },
+    "report": "FINDINGS: There is moderate pulmonary opacity. There is moderate consolidation.\nIMPRESSION: moderate pulmonary opacity; moderate consolidation."
   },
   {
     "case_id": "case_0010",
@@ -171,7 +182,8 @@
       "age": 39,
       "sex": "M",
       "indication": "chest pain"
-    }
+    },
+    "report": "FINDINGS: There is severe left atelectasis.\nIMPRESSION: severe atelectasis."
   },
   {
     "case_id": "case_0011",
@@ -187,7 +199,8 @@
       "age": 59,
       "sex": "M",
       "indication": "chest pain"
-    }
+    },
+    "report": "FINDINGS: There is severe right atelectasis.\nIMPRESSION: severe atelectasis."
   },
   {
     "case_id": "case_0012",
@@ -209,7 +222,8 @@
       "age": 45,
       "sex": "F",
       "indication": "chest pain"
-    }
+    },
+    "report": "FINDINGS: There is moderate pulmonary edema. There is mild consolidation.\nIMPRESSION: moderate pulmonary edema; mild consolidation."
   },
   {
     "case_id": "case_0013",
@@ -231,7 +245,8 @@
       "age": 35,
       "sex": "M",
       "indication": "routine pre-op"
-    }
+    },
+    "report": "FINDINGS: There is mild consolidation. There is moderate a fracture.\nIMPRESSION: mild consolidation; moderate a fracture."
   },
   {
     "case_id": "case_0014",
@@ -247,7 +262,8 @@
       "age": 69,
       "sex": "F",
       "indication": "chest pain"
-    }
+    },
+    "report": "FINDINGS: There is severe consolidation.\nIMPRESSION: severe consolidation."
   },
   {
     "case_id": "case_0015",
@@ -275,7 +291,8 @@
       "age": 38,
       "sex": "F",
       "indication": "routine pre-op"
-    }
+    },
+    "report": "FINDINGS: There is mild left pleural effusion. There is mild a fracture. There is severe cardiomegaly.\nIMPRESSION: mild pleural effusion; mild a fracture; severe cardiomegaly."
   },
   {
     "case_id": "case_0016",
@@ -284,7 +301,8 @@
       "age": 66,
       "sex": "F",
       "indication": "routine pre-op"
-    }
+    },
+    "report": "FINDINGS: No acute cardiopulmonary abnormality is identified. Heart size is normal. Lungs are clear.\nIMPRESSION: No acute findings.."
   },
   {
     "case_id": "case_0017",
@@ -300,7 +318,8 @@
       "age": 32,
       "sex": "F",
       "indication": "post-op check"
-    }
+    },
+    "report": "FINDINGS: There is mild support devices.\nIMPRESSION: mild support devices."
   },
   {
     "case_id": "case_0018",
@@ -309,7 +328,8 @@
       "age": 73,
       "sex": "M",
       "indication": "fever, rule out pneumonia"
-    }
+    },
+    "report": "FINDINGS: No acute cardiopulmonary abnormality is identified. Heart size is normal. Lungs are clear.\nIMPRESSION: No acute findings.."
   },
   {
     "case_id": "case_0019",
@@ -318,7 +338,8 @@
       "age": 51,
       "sex": "M",
       "indication": "routine pre-op"
-    }
+    },
+    "report": "FINDINGS: No acute cardiopulmonary abnormality is identified. Heart size is normal. Lungs are clear.\nIMPRESSION: No acute findings.."
   },
   {
     "case_id": "case_0020",
@@ -346,7 +367,8 @@
       "age": 59,
       "sex": "F",
       "indication": "shortness of breath"
-    }
+    },
+    "report": "FINDINGS: There is moderate right atelectasis. There is severe left pneumothorax. There is severe pulmonary opacity.\nIMPRESSION: moderate atelectasis; severe pneumothorax; severe pulmonary opacity."
   },
   {
     "case_id": "case_0021",
@@ -355,7 +377,8 @@
       "age": 64,
       "sex": "F",
       "indication": "chest pain"
-    }
+    },
+    "report": "FINDINGS: No acute cardiopulmonary abnormality is identified. Heart size is normal. Lungs are clear.\nIMPRESSION: No acute findings.."
   },
   {
     "case_id": "case_0022",
@@ -364,7 +387,8 @@
       "age": 90,
       "sex": "M",
       "indication": "shortness of breath"
-    }
+    },
+    "report": "FINDINGS: No acute cardiopulmonary abnormality is identified. Heart size is normal. Lungs are clear.\nIMPRESSION: No acute findings.."
   },
   {
     "case_id": "case_0023",
@@ -386,7 +410,8 @@
       "age": 88,
       "sex": "M",
       "indication": "post-op check"
-    }
+    },
+    "report": "FINDINGS: There is mild pulmonary opacity. There is severe pleural effusion.\nIMPRESSION: mild pulmonary opacity; severe pleural effusion."
   },
   {
     "case_id": "case_0024",
@@ -402,7 +427,8 @@
       "age": 87,
       "sex": "M",
       "indication": "post-op check"
-    }
+    },
+    "report": "FINDINGS: There is mild consolidation.\nIMPRESSION: mild consolidation."
   },
   {
     "case_id": "case_0025",
@@ -418,7 +444,8 @@
       "age": 84,
       "sex": "F",
       "indication": "shortness of breath"
-    }
+    },
+    "report": "FINDINGS: There is moderate pulmonary edema.\nIMPRESSION: moderate pulmonary edema."
   },
   {
     "case_id": "case_0026",
@@ -427,7 +454,8 @@
       "age": 26,
       "sex": "F",
       "indication": "shortness of breath"
-    }
+    },
+    "report": "FINDINGS: No acute cardiopulmonary abnormality is identified. Heart size is normal. Lungs are clear.\nIMPRESSION: No acute findings.."
   },
   {
     "case_id": "case_0027",
@@ -443,7 +471,8 @@
       "age": 18,
       "sex": "M",
       "indication": "shortness of breath"
-    }
+    },
+    "report": "FINDINGS: There is severe right pneumothorax.\nIMPRESSION: severe pneumothorax."
   },
   {
     "case_id": "case_0028",
@@ -452,7 +481,8 @@
       "age": 22,
       "sex": "F",
       "indication": "shortness of breath"
-    }
+    },
+    "report": "FINDINGS: No acute cardiopulmonary abnormality is identified. Heart size is normal. Lungs are clear.\nIMPRESSION: No acute findings.."
   },
   {
     "case_id": "case_0029",
@@ -468,7 +498,8 @@
       "age": 45,
       "sex": "M",
       "indication": "routine pre-op"
-    }
+    },
+    "report": "FINDINGS: There is severe atelectasis.\nIMPRESSION: severe atelectasis."
   },
   {
     "case_id": "case_0030",
@@ -484,7 +515,8 @@
       "age": 42,
       "sex": "M",
       "indication": "shortness of breath"
-    }
+    },
+    "report": "FINDINGS: There is moderate pneumothorax.\nIMPRESSION: moderate pneumothorax."
   },
   {
     "case_id": "case_0031",
@@ -506,7 +538,8 @@
       "age": 24,
       "sex": "M",
       "indication": "shortness of breath"
-    }
+    },
+    "report": "FINDINGS: There is moderate pulmonary edema. There is moderate consolidation.\nIMPRESSION: moderate pulmonary edema; moderate consolidation."
   },
   {
     "case_id": "case_0032",
@@ -522,7 +555,8 @@
       "age": 49,
       "sex": "M",
       "indication": "chest pain"
-    }
+    },
+    "report": "FINDINGS: There is mild pulmonary edema.\nIMPRESSION: mild pulmonary edema."
   },
   {
     "case_id": "case_0033",
@@ -538,7 +572,8 @@
       "age": 53,
       "sex": "F",
       "indication": "chest pain"
-    }
+    },
+    "report": "FINDINGS: There is moderate right pleural effusion.\nIMPRESSION: moderate pleural effusion."
   },
   {
     "case_id": "case_0034",
@@ -560,7 +595,8 @@
       "age": 24,
       "sex": "M",
       "indication": "shortness of breath"
-    }
+    },
+    "report": "FINDINGS: There is severe pulmonary opacity. There is mild a fracture.\nIMPRESSION: severe pulmonary opacity; mild a fracture."
   },
   {
     "case_id": "case_0035",
@@ -588,7 +624,8 @@
       "age": 39,
       "sex": "F",
       "indication": "shortness of breath"
-    }
+    },
+    "report": "FINDINGS: There is moderate pneumothorax. There is mild pleural effusion. There is mild support devices.\nIMPRESSION: moderate pneumothorax; mild pleural effusion; mild support devices."
   },
   {
     "case_id": "case_0036",
@@ -616,7 +653,8 @@
       "age": 45,
       "sex": "M",
       "indication": "routine pre-op"
-    }
+    },
+    "report": "FINDINGS: There is moderate atelectasis. There is mild a fracture. There is mild bilateral pleural effusion.\nIMPRESSION: moderate atelectasis; mild a fracture; mild pleural effusion."
   },
   {
     "case_id": "case_0037",
@@ -638,7 +676,8 @@
       "age": 79,
       "sex": "M",
       "indication": "shortness of breath"
-    }
+    },
+    "report": "FINDINGS: There is mild cardiomegaly. There is mild pulmonary edema.\nIMPRESSION: mild cardiomegaly; mild pulmonary edema."
   },
   {
     "case_id": "case_0038",
@@ -666,7 +705,8 @@
       "age": 33,
       "sex": "M",
       "indication": "routine pre-op"
-    }
+    },
+    "report": "FINDINGS: There is severe pulmonary opacity. There is mild right pleural effusion. There is moderate cardiomegaly.\nIMPRESSION: severe pulmonary opacity; mild pleural effusion; moderate cardiomegaly."
   },
   {
     "case_id": "case_0039",
@@ -682,7 +722,8 @@
       "age": 90,
       "sex": "F",
       "indication": "post-op check"
-    }
+    },
+    "report": "FINDINGS: There is moderate pulmonary opacity.\nIMPRESSION: moderate pulmonary opacity."
   },
   {
     "case_id": "case_0040",
@@ -691,7 +732,8 @@
       "age": 58,
       "sex": "M",
       "indication": "post-op check"
-    }
+    },
+    "report": "FINDINGS: No acute cardiopulmonary abnormality is identified. Heart size is normal. Lungs are clear.\nIMPRESSION: No acute findings.."
   },
   {
     "case_id": "case_0041",
@@ -707,7 +749,8 @@
       "age": 27,
       "sex": "M",
       "indication": "fever, rule out pneumonia"
-    }
+    },
+    "report": "FINDINGS: There is moderate bilateral atelectasis.\nIMPRESSION: moderate atelectasis."
   },
   {
     "case_id": "case_0042",
@@ -723,7 +766,8 @@
       "age": 86,
       "sex": "M",
       "indication": "routine pre-op"
-    }
+    },
+    "report": "FINDINGS: There is mild pulmonary opacity.\nIMPRESSION: mild pulmonary opacity."
   },
   {
     "case_id": "case_0043",
@@ -739,7 +783,8 @@
       "age": 49,
       "sex": "F",
       "indication": "post-op check"
-    }
+    },
+    "report": "FINDINGS: There is mild pulmonary edema.\nIMPRESSION: mild pulmonary edema."
   },
   {
     "case_id": "case_0044",
@@ -748,7 +793,8 @@
       "age": 87,
       "sex": "F",
       "indication": "routine pre-op"
-    }
+    },
+    "report": "FINDINGS: No acute cardiopulmonary abnormality is identified. Heart size is normal. Lungs are clear.\nIMPRESSION: No acute findings.."
   },
   {
     "case_id": "case_0045",
@@ -776,7 +822,8 @@
       "age": 31,
       "sex": "M",
       "indication": "post-op check"
-    }
+    },
+    "report": "FINDINGS: There is severe support devices. There is moderate cardiomegaly. There is severe pulmonary edema.\nIMPRESSION: severe support devices; moderate cardiomegaly; severe pulmonary edema."
   },
   {
     "case_id": "case_0046",
@@ -785,7 +832,8 @@
       "age": 31,
       "sex": "M",
       "indication": "post-op check"
-    }
+    },
+    "report": "FINDINGS: No acute cardiopulmonary abnormality is identified. Heart size is normal. Lungs are clear.\nIMPRESSION: No acute findings.."
   },
   {
     "case_id": "case_0047",
@@ -801,7 +849,8 @@
       "age": 44,
       "sex": "F",
       "indication": "routine pre-op"
-    }
+    },
+    "report": "FINDINGS: There is severe bilateral pneumothorax.\nIMPRESSION: severe pneumothorax."
   },
   {
     "case_id": "case_0048",
@@ -817,7 +866,8 @@
       "age": 72,
       "sex": "F",
       "indication": "shortness of breath"
-    }
+    },
+    "report": "FINDINGS: There is mild cardiomegaly.\nIMPRESSION: mild cardiomegaly."
   },
   {
     "case_id": "case_0049",
@@ -826,7 +876,8 @@
       "age": 34,
       "sex": "F",
       "indication": "chest pain"
-    }
+    },
+    "report": "FINDINGS: No acute cardiopulmonary abnormality is identified. Heart size is normal. Lungs are clear.\nIMPRESSION: No acute findings.."
   },
   {
     "case_id": "case_0050",
@@ -848,7 +899,8 @@
       "age": 32,
       "sex": "M",
       "indication": "chest pain"
-    }
+    },
+    "report": "FINDINGS: There is severe support devices. There is mild consolidation.\nIMPRESSION: severe support devices; mild consolidation."
   },
   {
     "case_id": "case_0051",
@@ -864,7 +916,8 @@
       "age": 88,
       "sex": "M",
       "indication": "fever, rule out pneumonia"
-    }
+    },
+    "report": "FINDINGS: There is severe pulmonary edema.\nIMPRESSION: severe pulmonary edema."
   },
   {
     "case_id": "case_0052",
@@ -873,7 +926,8 @@
       "age": 57,
       "sex": "F",
       "indication": "shortness of breath"
-    }
+    },
+    "report": "FINDINGS: No acute cardiopulmonary abnormality is identified. Heart size is normal. Lungs are clear.\nIMPRESSION: No acute findings.."
   },
   {
     "case_id": "case_0053",
@@ -895,7 +949,8 @@
       "age": 89,
       "sex": "F",
       "indication": "routine pre-op"
-    }
+    },
+    "report": "FINDINGS: There is severe left pneumothorax. There is moderate support devices.\nIMPRESSION: severe pneumothorax; moderate support devices."
   },
   {
     "case_id": "case_0054",
@@ -917,7 +972,8 @@
       "age": 60,
       "sex": "F",
       "indication": "chest pain"
-    }
+    },
+    "report": "FINDINGS: There is mild pneumothorax. There is mild right pleural effusion.\nIMPRESSION: mild pneumothorax; mild pleural effusion."
   },
   {
     "case_id": "case_0055",
@@ -933,7 +989,8 @@
       "age": 22,
       "sex": "F",
       "indication": "chest pain"
-    }
+    },
+    "report": "FINDINGS: There is moderate pulmonary opacity.\nIMPRESSION: moderate pulmonary opacity."
   },
   {
     "case_id": "case_0056",
@@ -942,7 +999,8 @@
       "age": 76,
       "sex": "F",
       "indication": "post-op check"
-    }
+    },
+    "report": "FINDINGS: No acute cardiopulmonary abnormality is identified. Heart size is normal. Lungs are clear.\nIMPRESSION: No acute findings.."
   },
   {
     "case_id": "case_0057",
@@ -964,7 +1022,8 @@
       "age": 60,
       "sex": "F",
       "indication": "shortness of breath"
-    }
+    },
+    "report": "FINDINGS: There is mild right pneumothorax. There is moderate support devices.\nIMPRESSION: mild pneumothorax; moderate support devices."
   },
   {
     "case_id": "case_0058",
@@ -992,7 +1051,8 @@
       "age": 60,
       "sex": "M",
       "indication": "shortness of breath"
-    }
+    },
+    "report": "FINDINGS: There is severe atelectasis. There is severe pulmonary edema. There is severe a fracture.\nIMPRESSION: severe atelectasis; severe pulmonary edema; severe a fracture."
   },
   {
     "case_id": "case_0059",
@@ -1014,6 +1074,7 @@
       "age": 73,
       "sex": "F",
       "indication": "post-op check"
-    }
+    },
+    "report": "FINDINGS: There is severe bilateral atelectasis. There is mild left pleural effusion.\nIMPRESSION: severe atelectasis; mild pleural effusion."
   }
 ]
