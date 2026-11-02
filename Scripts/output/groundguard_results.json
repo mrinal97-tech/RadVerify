@@ -1,15 +1,9 @@
 [
   {
     "case_id": "CXR3468_IM-1684-0001-0001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "opacity",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -191,20 +185,9 @@
   },
   {
     "case_id": "CXR2114_IM-0743-1001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "opacity",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      },
-      {
-        "label": "support_devices",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -258,20 +241,9 @@
   },
   {
     "case_id": "CXR3334_IM-1598-1001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "pleural_effusion",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      },
-      {
-        "label": "support_devices",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -285,15 +257,9 @@
   },
   {
     "case_id": "CXR992_IM-2477-0001-0001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "support_devices",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -411,15 +377,9 @@
   },
   {
     "case_id": "CXR1935_IM-0605-0001-0001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "support_devices",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -465,15 +425,9 @@
   },
   {
     "case_id": "CXR1053_IM-0040-1001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "support_devices",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -503,15 +457,9 @@
   },
   {
     "case_id": "CXR2285_IM-0870-1001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "support_devices",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -677,29 +625,17 @@
   },
   {
     "case_id": "CXR1234_IM-0157-1001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "support_devices",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
   {
     "case_id": "CXR2266_IM-0855-1001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "support_devices",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -753,15 +689,9 @@
   },
   {
     "case_id": "CXR1014_IM-0013-1001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "cardiomegaly",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -807,20 +737,9 @@
   },
   {
     "case_id": "CXR2905_IM-1309-1001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "pleural_effusion",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      },
-      {
-        "label": "support_devices",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -866,15 +785,9 @@
   },
   {
     "case_id": "CXR2942_IM-1343-1001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "support_devices",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -904,29 +817,17 @@
   },
   {
     "case_id": "CXR2544_IM-1054-1001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "support_devices",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
   {
     "case_id": "CXR2093_IM-0723-1001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "support_devices",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -940,29 +841,17 @@
   },
   {
     "case_id": "CXR2050_IM-0690-1001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "opacity",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
   {
     "case_id": "CXR3643_IM-1806-1001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "support_devices",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -1032,15 +921,9 @@
   },
   {
     "case_id": "CXR3502_IM-1707-1001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "support_devices",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -1270,15 +1153,9 @@
   },
   {
     "case_id": "CXR2193_IM-0803-1001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "pleural_effusion",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -1340,15 +1217,9 @@
   },
   {
     "case_id": "CXR972_IM-2461-1001-0001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "opacity",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -1394,15 +1265,9 @@
   },
   {
     "case_id": "CXR2382_IM-0941-1001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "support_devices",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -1432,15 +1297,9 @@
   },
   {
     "case_id": "CXR1112_IM-0078-1001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "pleural_effusion",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -1470,34 +1329,17 @@
   },
   {
     "case_id": "CXR3688_IM-1839-0001-0001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "opacity",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      },
-      {
-        "label": "pleural_effusion",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
   {
     "case_id": "CXR3237_IM-1534-1001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "opacity",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -1583,15 +1425,9 @@
   },
   {
     "case_id": "CXR2974_IM-1364-1001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "pleural_effusion",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -1661,20 +1497,9 @@
   },
   {
     "case_id": "CXR934_IM-2432-1001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "opacity",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      },
-      {
-        "label": "pleural_effusion",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -1752,20 +1577,9 @@
   },
   {
     "case_id": "CXR235_IM-0915-2001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "opacity",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      },
-      {
-        "label": "support_devices",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -1787,20 +1601,9 @@
   },
   {
     "case_id": "CXR524_IM-2135-0001-0001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "opacity",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      },
-      {
-        "label": "support_devices",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -1950,15 +1753,9 @@
   },
   {
     "case_id": "CXR2894_IM-1296-4001-0001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "support_devices",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -2116,15 +1913,9 @@
   },
   {
     "case_id": "CXR2325_IM-0896-1001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "opacity",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -2194,15 +1985,9 @@
   },
   {
     "case_id": "CXR3174_IM-1496-1001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "opacity",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -2272,15 +2057,9 @@
   },
   {
     "case_id": "CXR293_IM-1332-1001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "support_devices",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -2398,15 +2177,9 @@
   },
   {
     "case_id": "CXR1064_IM-0045-1001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "opacity",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -2548,15 +2321,9 @@
   },
   {
     "case_id": "CXR3032_IM-1407-1001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "support_devices",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -2610,15 +2377,9 @@
   },
   {
     "case_id": "CXR1720_IM-0475-0001-0001",
-    "flagged": true,
+    "flagged": false,
     "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "opacity",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
+    "missing_findings": [],
     "is_corrupted": false,
     "true_error_type": "CLEAN"
   },
@@ -2639,12 +2400,700 @@
     "true_error_type": "CLEAN"
   },
   {
-    "case_id": "CXR212_IM-0746-1001-0001",
+    "case_id": "CXR3557_IM-1742-0001-0001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "large bilateral pleural effusions are present.",
+        "reason": "severity 'severe' contradicts finding severity 'mild'",
+        "type": "SEVERITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "SEVERITY_FLIP"
+  },
+  {
+    "case_id": "CXR2644_IM-1130-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "large cardiomegaly.",
+        "reason": "severity 'severe' contradicts finding severity 'mild'",
+        "type": "SEVERITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "SEVERITY_FLIP"
+  },
+  {
+    "case_id": "CXR235_IM-0915-2001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "cardiomegaly and large interstitial pulmonary edema.",
+        "reason": "severity 'severe' contradicts finding severity 'mild'",
+        "type": "SEVERITY_FLIP"
+      },
+      {
+        "sentence": "cardiomegaly and large interstitial pulmonary edema.",
+        "reason": "severity 'severe' contradicts finding severity 'mild'",
+        "type": "SEVERITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "SEVERITY_FLIP"
+  },
+  {
+    "case_id": "CXR2400_IM-0950-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "stable cardiomegaly with small hiatal hernia.",
+        "reason": "severity 'mild' contradicts finding severity 'severe'",
+        "type": "SEVERITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "SEVERITY_FLIP"
+  },
+  {
+    "case_id": "CXR266_IM-1141-2001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "large cardiomegaly, atherosclerotic disease",
+        "reason": "severity 'severe' contradicts finding severity 'mild'",
+        "type": "SEVERITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "SEVERITY_FLIP"
+  },
+  {
+    "case_id": "CXR651_IM-2229-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is a large left pleural effusion.",
+        "reason": "severity 'severe' contradicts finding severity 'mild'",
+        "type": "SEVERITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "SEVERITY_FLIP"
+  },
+  {
+    "case_id": "CXR2382_IM-0941-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "small cardiomegaly with narrowed severe mediastinal contours.",
+        "reason": "severity 'mild' contradicts finding severity 'moderate'",
+        "type": "SEVERITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "SEVERITY_FLIP"
+  },
+  {
+    "case_id": "CXR1234_IM-0157-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "this could indicate a large amount of pleural fluid versus pleuralparenchymal scarring",
+        "reason": "severity 'severe' contradicts finding severity 'mild'",
+        "type": "SEVERITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "SEVERITY_FLIP"
+  },
+  {
+    "case_id": "CXR2905_IM-1309-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "patient is a small left effusion extending up to the level of the aortic.",
+        "reason": "severity 'mild' contradicts finding severity 'severe'",
+        "type": "SEVERITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "SEVERITY_FLIP"
+  },
+  {
+    "case_id": "CXR1112_IM-0078-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is small cardiomegaly identified.",
+        "reason": "severity 'mild' contradicts finding severity 'moderate'",
+        "type": "SEVERITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "SEVERITY_FLIP"
+  },
+  {
+    "case_id": "CXR1419_IM-0267-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is large bibasilar focal atelectasis.",
+        "reason": "severity 'severe' contradicts finding severity 'mild'",
+        "type": "SEVERITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "SEVERITY_FLIP"
+  },
+  {
+    "case_id": "CXR1709_IM-0467-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is large opacity in the lung bases.",
+        "reason": "severity 'severe' contradicts finding severity 'mild'",
+        "type": "SEVERITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "SEVERITY_FLIP"
+  },
+  {
+    "case_id": "CXR3768_IM-1887-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "large cardiomegaly.",
+        "reason": "severity 'severe' contradicts finding severity 'mild'",
+        "type": "SEVERITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "SEVERITY_FLIP"
+  },
+  {
+    "case_id": "CXR123_IM-0153-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "large cardiomegaly.",
+        "reason": "severity 'severe' contradicts finding severity 'mild'",
+        "type": "SEVERITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "SEVERITY_FLIP"
+  },
+  {
+    "case_id": "CXR934_IM-2432-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is large blunting of both posterior costophrenic sulci, which may reflect effusions.",
+        "reason": "severity 'severe' contradicts finding severity 'mild'",
+        "type": "SEVERITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "SEVERITY_FLIP"
+  },
+  {
+    "case_id": "CXR1398_IM-0254-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "large right basilar atelectasis and relative elevation of the right hemidiaphragm noted.",
+        "reason": "severity 'severe' contradicts finding severity 'mild'",
+        "type": "SEVERITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "SEVERITY_FLIP"
+  },
+  {
+    "case_id": "CXR2489_IM-1016-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "large atelectasis or scarring in the left lower lobe.",
+        "reason": "severity 'severe' contradicts finding severity 'mild'",
+        "type": "SEVERITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "SEVERITY_FLIP"
+  },
+  {
+    "case_id": "CXR1053_IM-0040-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is stable large cardiomegaly.",
+        "reason": "severity 'severe' contradicts finding severity 'mild'",
+        "type": "SEVERITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "SEVERITY_FLIP"
+  },
+  {
+    "case_id": "CXR3233_IM-1530-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is large scarring or atelectasis in the left lung base.",
+        "reason": "severity 'severe' contradicts finding severity 'mild'",
+        "type": "SEVERITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "SEVERITY_FLIP"
+  },
+  {
+    "case_id": "CXR1317_IM-0205-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is large atelectasis in the left base.",
+        "reason": "severity 'severe' contradicts finding severity 'mild'",
+        "type": "SEVERITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "SEVERITY_FLIP"
+  },
+  {
+    "case_id": "CXR3237_IM-1534-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "large streaky airspace opacities in the lower lobes.",
+        "reason": "severity 'severe' contradicts finding severity 'mild'",
+        "type": "SEVERITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "SEVERITY_FLIP"
+  },
+  {
+    "case_id": "CXR3334_IM-1598-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "possible large effusions.",
+        "reason": "severity 'severe' contradicts finding severity 'mild'",
+        "type": "SEVERITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "SEVERITY_FLIP"
+  },
+  {
+    "case_id": "CXR2974_IM-1364-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "blunting of the lateral and posterior right costophrenic sulcus may represent residual postsurgical effusion or pleuralparenchymal scarring.",
+        "reason": "laterality 'right' contradicts finding laterality 'left'",
+        "type": "LATERALITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "LATERALITY_FLIP"
+  },
+  {
+    "case_id": "CXR2325_IM-0896-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "opacities in the right base may be compatible with scarring or subsegmental atelectasis.",
+        "reason": "laterality 'right' contradicts finding laterality 'left'",
+        "type": "LATERALITY_FLIP"
+      },
+      {
+        "sentence": "opacities in the right base may be compatible with scarring or subsegmental atelectasis.",
+        "reason": "laterality 'right' contradicts finding laterality 'left'",
+        "type": "LATERALITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "LATERALITY_FLIP"
+  },
+  {
+    "case_id": "CXR1196_IM-0131-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "airspace disease within the right lower lung.",
+        "reason": "laterality 'right' contradicts finding laterality 'left'",
+        "type": "LATERALITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "LATERALITY_FLIP"
+  },
+  {
+    "case_id": "CXR3961_IM-2026-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is a streaky opacity within the left upper lobe.",
+        "reason": "laterality 'left' contradicts finding laterality 'right'",
+        "type": "LATERALITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "LATERALITY_FLIP"
+  },
+  {
+    "case_id": "CXR524_IM-2135-0001-0001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "bibasilar and left midlung pulmonary opacities, atelectatic changes.",
+        "reason": "laterality 'left' contradicts finding laterality 'right'",
+        "type": "LATERALITY_FLIP"
+      },
+      {
+        "sentence": "bibasilar and left midlung pulmonary opacities, atelectatic changes.",
+        "reason": "laterality 'left' contradicts finding laterality 'right'",
+        "type": "LATERALITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "LATERALITY_FLIP"
+  },
+  {
+    "case_id": "CXR2355_IM-0919-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is right lung base atelectasis on frontal secondary to low volumes.",
+        "reason": "laterality 'right' contradicts finding laterality 'left'",
+        "type": "LATERALITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "LATERALITY_FLIP"
+  },
+  {
+    "case_id": "CXR3579_IM-1759-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "interval resolution of the right pleural effusion.",
+        "reason": "laterality 'right' contradicts finding laterality 'left'",
+        "type": "LATERALITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "LATERALITY_FLIP"
+  },
+  {
+    "case_id": "CXR2728_IM-1187-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "chronic left middle lobe scar and atelectasis.",
+        "reason": "laterality 'left' contradicts finding laterality 'right'",
+        "type": "LATERALITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "LATERALITY_FLIP"
+  },
+  {
+    "case_id": "CXR1003_IM-0005-2002",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there has been interval development of bandlike opacity in the right lung base.",
+        "reason": "laterality 'right' contradicts finding laterality 'left'",
+        "type": "LATERALITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "LATERALITY_FLIP"
+  },
+  {
+    "case_id": "CXR3882_IM-1970-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "question concomitant right basilar opacity, may represent atelectasis or infiltrate",
+        "reason": "laterality 'right' contradicts finding laterality 'left'",
+        "type": "LATERALITY_FLIP"
+      },
+      {
+        "sentence": "question concomitant right basilar opacity, may represent atelectasis or infiltrate",
+        "reason": "laterality 'right' contradicts finding laterality 'left'",
+        "type": "LATERALITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "LATERALITY_FLIP"
+  },
+  {
+    "case_id": "CXR3565_IM-1750-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "stable left middle lobe consolidation, most consistent with pneumonia",
+        "reason": "laterality 'left' contradicts finding laterality 'right'",
+        "type": "LATERALITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "LATERALITY_FLIP"
+  },
+  {
+    "case_id": "CXR2050_IM-0690-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "opacities in the right lung base, atelectasis or scarring low lung volumes no focal air space opacities to suggest pneumonia",
+        "reason": "laterality 'right' contradicts finding laterality 'left'",
+        "type": "LATERALITY_FLIP"
+      },
+      {
+        "sentence": "opacities in the right lung base, atelectasis or scarring low lung volumes no focal air space opacities to suggest pneumonia",
+        "reason": "laterality 'right' contradicts finding laterality 'left'",
+        "type": "LATERALITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "LATERALITY_FLIP"
+  },
+  {
+    "case_id": "CXR1121_IM-0080-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "the skeletal structures show several old rib fractures unchanged in the prior study on the right.",
+        "reason": "laterality 'right' contradicts finding laterality 'left'",
+        "type": "LATERALITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "LATERALITY_FLIP"
+  },
+  {
+    "case_id": "CXR3565_IM-1750-2001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "stable left middle lobe consolidation, most consistent with pneumonia",
+        "reason": "laterality 'left' contradicts finding laterality 'right'",
+        "type": "LATERALITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "LATERALITY_FLIP"
+  },
+  {
+    "case_id": "CXR972_IM-2461-1001-0001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "a few scant reticular opacities in left lung base hypoventilation and foci of subsegmental atelectasis.",
+        "reason": "laterality 'left' contradicts finding laterality 'right'",
+        "type": "LATERALITY_FLIP"
+      },
+      {
+        "sentence": "a few scant reticular opacities in left lung base hypoventilation and foci of subsegmental atelectasis.",
+        "reason": "laterality 'left' contradicts finding laterality 'right'",
+        "type": "LATERALITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "LATERALITY_FLIP"
+  },
+  {
+    "case_id": "CXR2894_IM-1296-4001-0001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "left subclavian catheter tip is in the lower svc.",
+        "reason": "laterality 'left' contradicts finding laterality 'right'",
+        "type": "LATERALITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "LATERALITY_FLIP"
+  },
+  {
+    "case_id": "CXR147_IM-0303-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "nodular density overlying the anterior right 4th rib represents a healing rib fracture.",
+        "reason": "laterality 'right' contradicts finding laterality 'left'",
+        "type": "LATERALITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "LATERALITY_FLIP"
+  },
+  {
+    "case_id": "CXR1935_IM-0605-0001-0001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "left ij catheter is in with tip in proximal left atriumcavoatrial junction.",
+        "reason": "laterality 'left' contradicts finding laterality 'right'",
+        "type": "LATERALITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "LATERALITY_FLIP"
+  },
+  {
+    "case_id": "CXR161_IM-0394-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "scattered of right base atelectasis are noted.",
+        "reason": "laterality 'right' contradicts finding laterality 'left'",
+        "type": "LATERALITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "LATERALITY_FLIP"
+  },
+  {
+    "case_id": "CXR2844_IM-1254-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "old right rib fractures.",
+        "reason": "laterality 'right' contradicts finding laterality 'left'",
+        "type": "LATERALITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "LATERALITY_FLIP"
+  },
+  {
+    "case_id": "CXR1064_IM-0045-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is stable elevation of the left hemidiaphragm with questionable increased left basilar airspace opacities.",
+        "reason": "laterality 'left' contradicts finding laterality 'right'",
+        "type": "LATERALITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "LATERALITY_FLIP"
+  },
+  {
+    "case_id": "CXR2266_IM-0855-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "some focal subsegmental atelectasis suggested on lateral view, probably involving the basilar portion of the left middle lobe.",
+        "reason": "laterality 'left' contradicts finding laterality 'right'",
+        "type": "LATERALITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "LATERALITY_FLIP"
+  },
+  {
+    "case_id": "CXR2585_IM-1082-2001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "airspace disease in expected location of left middle lobe also noted on the lateral view to no pleural effusion.",
+        "reason": "laterality 'left' contradicts finding laterality 'right'",
+        "type": "LATERALITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "LATERALITY_FLIP"
+  },
+  {
+    "case_id": "CXR2704_IM-1171-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is right base streaky opacity due to scarring or discoid atelectasis.",
+        "reason": "laterality 'right' contradicts finding laterality 'left'",
+        "type": "LATERALITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "LATERALITY_FLIP"
+  },
+  {
+    "case_id": "CXR2193_IM-0803-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "opacity in the left lung base also appears unchanged, scarring.",
+        "reason": "laterality 'left' contradicts finding laterality 'right'",
+        "type": "LATERALITY_FLIP"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "LATERALITY_FLIP"
+  },
+  {
+    "case_id": "CXR3643_IM-1806-1001",
     "flagged": true,
     "unsupported_claims": [],
     "missing_findings": [
       {
-        "label": "fracture",
+        "label": "support_devices",
         "reason": "structured finding not positively mentioned in report",
         "type": "OMITTED_FINDING"
       }
@@ -2653,119 +3102,7 @@
     "true_error_type": "OMITTED_FINDING"
   },
   {
-    "case_id": "CXR786_IM-2326-1001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is mild pulmonary edema.",
-        "reason": "'pulmonary_edema' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR1583_IM-0378-1001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is moderate cardiomegaly.",
-        "reason": "'cardiomegaly' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR230_IM-0880-0001-0001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is severe pneumothorax.",
-        "reason": "'pneumothorax' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR2873_IM-1279-3003",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is moderate cardiomegaly.",
-        "reason": "'cardiomegaly' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR2885_IM-1287-2001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is moderate pneumothorax.",
-        "reason": "'pneumothorax' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR1265_IM-0179-1001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is moderate pleural effusion.",
-        "reason": "'pleural_effusion' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR1459_IM-0297-1001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is moderate pleural effusion.",
-        "reason": "'pleural_effusion' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR2073_IM-0707-1001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is moderate cardiomegaly.",
-        "reason": "'cardiomegaly' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR3988_IM-2041-1001",
+    "case_id": "CXR3066_IM-1430-1001",
     "flagged": true,
     "unsupported_claims": [],
     "missing_findings": [
@@ -2779,147 +3116,21 @@
     "true_error_type": "OMITTED_FINDING"
   },
   {
-    "case_id": "CXR3826_IM-1932-1001",
+    "case_id": "CXR2919_IM-1321-2001",
     "flagged": true,
-    "unsupported_claims": [
+    "unsupported_claims": [],
+    "missing_findings": [
       {
-        "sentence": "There is mild pulmonary opacity.",
-        "reason": "'opacity' not in structured findings",
-        "type": "ADDED_FINDING"
+        "label": "cardiomegaly",
+        "reason": "structured finding not positively mentioned in report",
+        "type": "OMITTED_FINDING"
       }
     ],
-    "missing_findings": [],
     "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
+    "true_error_type": "OMITTED_FINDING"
   },
   {
-    "case_id": "CXR1413_IM-0263-1001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is moderate a fracture.",
-        "reason": "'fracture' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR661_IM-2238-2002",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is moderate atelectasis.",
-        "reason": "'atelectasis' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR346_IM-1680-12012",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is mild pulmonary opacity.",
-        "reason": "'opacity' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR2629_IM-1116-1001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is severe cardiomegaly.",
-        "reason": "'cardiomegaly' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR1009_IM-0010-1001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is mild a fracture.",
-        "reason": "'fracture' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR2847_IM-1256-1001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is moderate pleural effusion.",
-        "reason": "'pleural_effusion' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR1219_IM-0146-1001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is mild atelectasis.",
-        "reason": "'atelectasis' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR1151_IM-0102-1001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is mild pneumothorax.",
-        "reason": "'pneumothorax' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR3393_IM-1637-1001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is moderate consolidation.",
-        "reason": "'consolidation' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR992_IM-2477-0001-0001",
+    "case_id": "CXR2093_IM-0723-1001",
     "flagged": true,
     "unsupported_claims": [],
     "missing_findings": [
@@ -2933,15 +3144,10 @@
     "true_error_type": "OMITTED_FINDING"
   },
   {
-    "case_id": "CXR3334_IM-1598-1001",
+    "case_id": "CXR2285_IM-0870-1001",
     "flagged": true,
     "unsupported_claims": [],
     "missing_findings": [
-      {
-        "label": "pleural_effusion",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      },
       {
         "label": "support_devices",
         "reason": "structured finding not positively mentioned in report",
@@ -2949,209 +3155,195 @@
       }
     ],
     "is_corrupted": true,
-    "true_error_type": "SEVERITY_FLIP"
+    "true_error_type": "OMITTED_FINDING"
   },
   {
-    "case_id": "CXR1852_IM-0554-1001",
+    "case_id": "CXR3688_IM-1839-0001-0001",
     "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is moderate support devices.",
-        "reason": "'support_devices' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR3721_IM-1859-1001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is moderate pneumothorax.",
-        "reason": "'pneumothorax' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR128_IM-0186-82592001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is severe atelectasis.",
-        "reason": "'atelectasis' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR1062_IM-0043-1001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is mild pleural effusion.",
-        "reason": "'pleural_effusion' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR3237_IM-1534-1001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "severe bibasilar opacities which may reflect atelectasis or infiltrate\nsee findings.",
-        "reason": "severity 'severe' contradicts finding severity 'mild'",
-        "type": "SEVERITY_FLIP"
-      }
-    ],
+    "unsupported_claims": [],
     "missing_findings": [
       {
         "label": "opacity",
         "reason": "structured finding not positively mentioned in report",
         "type": "OMITTED_FINDING"
+      },
+      {
+        "label": "pleural_effusion",
+        "reason": "structured finding not positively mentioned in report",
+        "type": "OMITTED_FINDING"
+      },
+      {
+        "label": "atelectasis",
+        "reason": "structured finding not positively mentioned in report",
+        "type": "OMITTED_FINDING"
       }
     ],
     "is_corrupted": true,
-    "true_error_type": "SEVERITY_FLIP"
+    "true_error_type": "OMITTED_FINDING"
   },
   {
-    "case_id": "CXR3639_IM-1804-1001",
+    "case_id": "CXR3032_IM-1407-1001",
     "flagged": true,
-    "unsupported_claims": [
+    "unsupported_claims": [],
+    "missing_findings": [
       {
-        "sentence": "There is mild cardiomegaly.",
-        "reason": "'cardiomegaly' not in structured findings",
-        "type": "ADDED_FINDING"
+        "label": "support_devices",
+        "reason": "structured finding not positively mentioned in report",
+        "type": "OMITTED_FINDING"
       }
     ],
-    "missing_findings": [],
     "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
+    "true_error_type": "OMITTED_FINDING"
   },
   {
-    "case_id": "CXR3229_IM-1526-1001",
+    "case_id": "CXR2114_IM-0743-1001",
     "flagged": true,
-    "unsupported_claims": [
+    "unsupported_claims": [],
+    "missing_findings": [
       {
-        "sentence": "There is mild a fracture.",
-        "reason": "'fracture' not in structured findings",
-        "type": "ADDED_FINDING"
+        "label": "opacity",
+        "reason": "structured finding not positively mentioned in report",
+        "type": "OMITTED_FINDING"
+      },
+      {
+        "label": "atelectasis",
+        "reason": "structured finding not positively mentioned in report",
+        "type": "OMITTED_FINDING"
       }
     ],
-    "missing_findings": [],
     "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
+    "true_error_type": "OMITTED_FINDING"
   },
   {
-    "case_id": "CXR1050_IM-0038-2001",
+    "case_id": "CXR520_IM-2131-1001",
     "flagged": true,
-    "unsupported_claims": [
+    "unsupported_claims": [],
+    "missing_findings": [
       {
-        "sentence": "There is moderate pleural effusion.",
-        "reason": "'pleural_effusion' not in structured findings",
-        "type": "ADDED_FINDING"
+        "label": "fracture",
+        "reason": "structured finding not positively mentioned in report",
+        "type": "OMITTED_FINDING"
       }
     ],
-    "missing_findings": [],
     "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
+    "true_error_type": "OMITTED_FINDING"
   },
   {
-    "case_id": "CXR2585_IM-1082-1001",
+    "case_id": "CXR1720_IM-0475-0001-0001",
     "flagged": true,
-    "unsupported_claims": [
+    "unsupported_claims": [],
+    "missing_findings": [
       {
-        "sentence": "There is moderate pulmonary opacity.",
-        "reason": "'opacity' not in structured findings",
-        "type": "ADDED_FINDING"
+        "label": "opacity",
+        "reason": "structured finding not positively mentioned in report",
+        "type": "OMITTED_FINDING"
+      },
+      {
+        "label": "atelectasis",
+        "reason": "structured finding not positively mentioned in report",
+        "type": "OMITTED_FINDING"
       }
     ],
-    "missing_findings": [],
     "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
+    "true_error_type": "OMITTED_FINDING"
   },
   {
-    "case_id": "CXR120_IM-0133-1001",
+    "case_id": "CXR1570_IM-0372-1001",
     "flagged": true,
-    "unsupported_claims": [
+    "unsupported_claims": [],
+    "missing_findings": [
       {
-        "sentence": "There is severe pulmonary edema.",
-        "reason": "'pulmonary_edema' not in structured findings",
-        "type": "ADDED_FINDING"
+        "label": "pneumothorax",
+        "reason": "structured finding not positively mentioned in report",
+        "type": "OMITTED_FINDING"
       }
     ],
-    "missing_findings": [],
     "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
+    "true_error_type": "OMITTED_FINDING"
   },
   {
-    "case_id": "CXR1295_IM-0194-2002",
+    "case_id": "CXR293_IM-1332-1001",
     "flagged": true,
-    "unsupported_claims": [
+    "unsupported_claims": [],
+    "missing_findings": [
       {
-        "sentence": "There is mild cardiomegaly.",
-        "reason": "'cardiomegaly' not in structured findings",
-        "type": "ADDED_FINDING"
+        "label": "support_devices",
+        "reason": "structured finding not positively mentioned in report",
+        "type": "OMITTED_FINDING"
       }
     ],
-    "missing_findings": [],
     "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
+    "true_error_type": "OMITTED_FINDING"
   },
   {
-    "case_id": "CXR1317_IM-0205-1001",
+    "case_id": "CXR2040_IM-0684-1001",
     "flagged": true,
-    "unsupported_claims": [
+    "unsupported_claims": [],
+    "missing_findings": [
       {
-        "sentence": "there is severe atelectasis in the left base.",
-        "reason": "severity 'severe' contradicts finding severity 'mild'",
-        "type": "SEVERITY_FLIP"
+        "label": "cardiomegaly",
+        "reason": "structured finding not positively mentioned in report",
+        "type": "OMITTED_FINDING"
       }
     ],
-    "missing_findings": [],
     "is_corrupted": true,
-    "true_error_type": "SEVERITY_FLIP"
+    "true_error_type": "OMITTED_FINDING"
   },
   {
-    "case_id": "CXR557_IM-2157-1001",
+    "case_id": "CXR1014_IM-0013-1001",
     "flagged": true,
-    "unsupported_claims": [
+    "unsupported_claims": [],
+    "missing_findings": [
       {
-        "sentence": "There is moderate pulmonary opacity.",
-        "reason": "'opacity' not in structured findings",
-        "type": "ADDED_FINDING"
+        "label": "cardiomegaly",
+        "reason": "structured finding not positively mentioned in report",
+        "type": "OMITTED_FINDING"
       }
     ],
-    "missing_findings": [],
     "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
+    "true_error_type": "OMITTED_FINDING"
   },
   {
-    "case_id": "CXR242_IM-0963-1001",
+    "case_id": "CXR2416_IM-0961-1001",
     "flagged": true,
-    "unsupported_claims": [
+    "unsupported_claims": [],
+    "missing_findings": [
       {
-        "sentence": "There is mild pulmonary edema.",
-        "reason": "'pulmonary_edema' not in structured findings",
-        "type": "ADDED_FINDING"
+        "label": "cardiomegaly",
+        "reason": "structured finding not positively mentioned in report",
+        "type": "OMITTED_FINDING"
       }
     ],
-    "missing_findings": [],
     "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
+    "true_error_type": "OMITTED_FINDING"
+  },
+  {
+    "case_id": "CXR2544_IM-1054-1001",
+    "flagged": true,
+    "unsupported_claims": [],
+    "missing_findings": [
+      {
+        "label": "support_devices",
+        "reason": "structured finding not positively mentioned in report",
+        "type": "OMITTED_FINDING"
+      }
+    ],
+    "is_corrupted": true,
+    "true_error_type": "OMITTED_FINDING"
+  },
+  {
+    "case_id": "CXR495_IM-2114-1001",
+    "flagged": true,
+    "unsupported_claims": [],
+    "missing_findings": [
+      {
+        "label": "consolidation",
+        "reason": "structured finding not positively mentioned in report",
+        "type": "OMITTED_FINDING"
+      }
+    ],
+    "is_corrupted": true,
+    "true_error_type": "OMITTED_FINDING"
   },
   {
     "case_id": "CXR3175_IM-1497-1001",
@@ -3168,12 +3360,673 @@
     "true_error_type": "OMITTED_FINDING"
   },
   {
-    "case_id": "CXR495_IM-2114-1001",
+    "case_id": "CXR3721_IM-1859-1001",
+    "flagged": true,
+    "unsupported_claims": [],
+    "missing_findings": [
+      {
+        "label": "opacity",
+        "reason": "structured finding not positively mentioned in report",
+        "type": "OMITTED_FINDING"
+      }
+    ],
+    "is_corrupted": true,
+    "true_error_type": "OMITTED_FINDING"
+  },
+  {
+    "case_id": "CXR3988_IM-2041-1001",
+    "flagged": true,
+    "unsupported_claims": [],
+    "missing_findings": [
+      {
+        "label": "fracture",
+        "reason": "structured finding not positively mentioned in report",
+        "type": "OMITTED_FINDING"
+      }
+    ],
+    "is_corrupted": true,
+    "true_error_type": "OMITTED_FINDING"
+  },
+  {
+    "case_id": "CXR1459_IM-0297-1001",
+    "flagged": true,
+    "unsupported_claims": [],
+    "missing_findings": [
+      {
+        "label": "cardiomegaly",
+        "reason": "structured finding not positively mentioned in report",
+        "type": "OMITTED_FINDING"
+      }
+    ],
+    "is_corrupted": true,
+    "true_error_type": "OMITTED_FINDING"
+  },
+  {
+    "case_id": "CXR2885_IM-1287-2001",
+    "flagged": true,
+    "unsupported_claims": [],
+    "missing_findings": [
+      {
+        "label": "fracture",
+        "reason": "structured finding not positively mentioned in report",
+        "type": "OMITTED_FINDING"
+      }
+    ],
+    "is_corrupted": true,
+    "true_error_type": "OMITTED_FINDING"
+  },
+  {
+    "case_id": "CXR212_IM-0746-1001-0001",
+    "flagged": true,
+    "unsupported_claims": [],
+    "missing_findings": [
+      {
+        "label": "fracture",
+        "reason": "structured finding not positively mentioned in report",
+        "type": "OMITTED_FINDING"
+      }
+    ],
+    "is_corrupted": true,
+    "true_error_type": "OMITTED_FINDING"
+  },
+  {
+    "case_id": "CXR3713_IM-1855-1001",
     "flagged": true,
     "unsupported_claims": [
       {
-        "sentence": "There is severe cardiomegaly.",
+        "sentence": "there is airspace consolidation",
+        "reason": "'consolidation' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "NEGATION_FLIP"
+  },
+  {
+    "case_id": "CXR2342_IM-0907-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is consolidation, pleural effusion, or pneumothorax identified.",
+        "reason": "'pleural_effusion' not in structured findings",
+        "type": "ADDED_FINDING"
+      },
+      {
+        "sentence": "there is consolidation, pleural effusion, or pneumothorax identified.",
+        "reason": "'pneumothorax' not in structured findings",
+        "type": "ADDED_FINDING"
+      },
+      {
+        "sentence": "there is consolidation, pleural effusion, or pneumothorax identified.",
+        "reason": "'consolidation' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "NEGATION_FLIP"
+  },
+  {
+    "case_id": "CXR3003_IM-1388-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is consolidation, pneumothorax, or pleural effusions.",
+        "reason": "'pleural_effusion' not in structured findings",
+        "type": "ADDED_FINDING"
+      },
+      {
+        "sentence": "there is consolidation, pneumothorax, or pleural effusions.",
+        "reason": "'pneumothorax' not in structured findings",
+        "type": "ADDED_FINDING"
+      },
+      {
+        "sentence": "there is consolidation, pneumothorax, or pleural effusions.",
+        "reason": "'consolidation' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "NEGATION_FLIP"
+  },
+  {
+    "case_id": "CXR2835_IM-1251-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is pneumothorax or pleural effusion.",
+        "reason": "'pleural_effusion' not in structured findings",
+        "type": "ADDED_FINDING"
+      },
+      {
+        "sentence": "there is pneumothorax or pleural effusion.",
+        "reason": "'pneumothorax' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "NEGATION_FLIP"
+  },
+  {
+    "case_id": "CXR84_IM-2363-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is pleural effusion, pneumothorax or focal airspace disease.",
+        "reason": "'pleural_effusion' not in structured findings",
+        "type": "ADDED_FINDING"
+      },
+      {
+        "sentence": "there is pleural effusion, pneumothorax or focal airspace disease.",
+        "reason": "'pneumothorax' not in structured findings",
+        "type": "ADDED_FINDING"
+      },
+      {
+        "sentence": "there is pleural effusion, pneumothorax or focal airspace disease.",
+        "reason": "'consolidation' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "NEGATION_FLIP"
+  },
+  {
+    "case_id": "CXR1456_IM-0294-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is pleural effusions.",
+        "reason": "'pleural_effusion' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "NEGATION_FLIP"
+  },
+  {
+    "case_id": "CXR279_IM-1224-1001-0001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is pleural effusion or pneumothorax is seen.",
+        "reason": "'pleural_effusion' not in structured findings",
+        "type": "ADDED_FINDING"
+      },
+      {
+        "sentence": "there is pleural effusion or pneumothorax is seen.",
+        "reason": "'pneumothorax' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "NEGATION_FLIP"
+  },
+  {
+    "case_id": "CXR3938_IM-2009-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is pneumonia, effusions, edema, pneumothorax, adenopathy, nodules or masses.",
+        "reason": "'pleural_effusion' not in structured findings",
+        "type": "ADDED_FINDING"
+      },
+      {
+        "sentence": "there is pneumonia, effusions, edema, pneumothorax, adenopathy, nodules or masses.",
+        "reason": "'pneumothorax' not in structured findings",
+        "type": "ADDED_FINDING"
+      },
+      {
+        "sentence": "there is pneumonia, effusions, edema, pneumothorax, adenopathy, nodules or masses.",
+        "reason": "'pulmonary_edema' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "NEGATION_FLIP"
+  },
+  {
+    "case_id": "CXR1747_IM-0490-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is pneumothorax or pleural effusion present.",
+        "reason": "'pleural_effusion' not in structured findings",
+        "type": "ADDED_FINDING"
+      },
+      {
+        "sentence": "there is pneumothorax or pleural effusion present.",
+        "reason": "'pneumothorax' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "NEGATION_FLIP"
+  },
+  {
+    "case_id": "CXR774_IM-2318-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is pleural effusions or pneumothoraces.",
+        "reason": "'pleural_effusion' not in structured findings",
+        "type": "ADDED_FINDING"
+      },
+      {
+        "sentence": "there is pleural effusions or pneumothoraces.",
+        "reason": "'pneumothorax' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "NEGATION_FLIP"
+  },
+  {
+    "case_id": "CXR523_IM-2134-2001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is pneumonia, effusions, edema, pneumothorax, adenopathy, nodules or masses.",
+        "reason": "'pleural_effusion' not in structured findings",
+        "type": "ADDED_FINDING"
+      },
+      {
+        "sentence": "there is pneumonia, effusions, edema, pneumothorax, adenopathy, nodules or masses.",
+        "reason": "'pneumothorax' not in structured findings",
+        "type": "ADDED_FINDING"
+      },
+      {
+        "sentence": "there is pneumonia, effusions, edema, pneumothorax, adenopathy, nodules or masses.",
+        "reason": "'pulmonary_edema' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "NEGATION_FLIP"
+  },
+  {
+    "case_id": "CXR3296_IM-1575-1001-0001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is pneumothorax.",
+        "reason": "'pneumothorax' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "NEGATION_FLIP"
+  },
+  {
+    "case_id": "CXR1228_IM-0151-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is infiltrates or pleural effusions.",
+        "reason": "'pleural_effusion' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "NEGATION_FLIP"
+  },
+  {
+    "case_id": "CXR3796_IM-1909-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is pleural effusion.",
+        "reason": "'pleural_effusion' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "NEGATION_FLIP"
+  },
+  {
+    "case_id": "CXR1165_IM-0110-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is pleural effusion.",
+        "reason": "'pleural_effusion' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "NEGATION_FLIP"
+  },
+  {
+    "case_id": "CXR1314_IM-0204-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is pleural effusions.",
+        "reason": "'pleural_effusion' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "NEGATION_FLIP"
+  },
+  {
+    "case_id": "CXR3796_IM-1909-2001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is pleural effusion.",
+        "reason": "'pleural_effusion' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "NEGATION_FLIP"
+  },
+  {
+    "case_id": "CXR768_IM-2313-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is pleural effusion.",
+        "reason": "'pleural_effusion' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "NEGATION_FLIP"
+  },
+  {
+    "case_id": "CXR3041_IM-1415-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is pneumonia, effusions, edema, pneumothorax, adenopathy, nodules or masses.",
+        "reason": "'pleural_effusion' not in structured findings",
+        "type": "ADDED_FINDING"
+      },
+      {
+        "sentence": "there is pneumonia, effusions, edema, pneumothorax, adenopathy, nodules or masses.",
+        "reason": "'pneumothorax' not in structured findings",
+        "type": "ADDED_FINDING"
+      },
+      {
+        "sentence": "there is pneumonia, effusions, edema, pneumothorax, adenopathy, nodules or masses.",
+        "reason": "'pulmonary_edema' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "NEGATION_FLIP"
+  },
+  {
+    "case_id": "CXR3828_IM-1932-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is pleural effusion or pneumothorax.",
+        "reason": "'pleural_effusion' not in structured findings",
+        "type": "ADDED_FINDING"
+      },
+      {
+        "sentence": "there is pleural effusion or pneumothorax.",
+        "reason": "'pneumothorax' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "NEGATION_FLIP"
+  },
+  {
+    "case_id": "CXR2854_IM-1262-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is pneumothorax or pleural effusion.",
+        "reason": "'pleural_effusion' not in structured findings",
+        "type": "ADDED_FINDING"
+      },
+      {
+        "sentence": "there is pneumothorax or pleural effusion.",
+        "reason": "'pneumothorax' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "NEGATION_FLIP"
+  },
+  {
+    "case_id": "CXR3088_IM-1444-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is pulmonary opacity, pleural effusion or pneumothorax.",
+        "reason": "'opacity' not in structured findings",
+        "type": "ADDED_FINDING"
+      },
+      {
+        "sentence": "there is pulmonary opacity, pleural effusion or pneumothorax.",
+        "reason": "'pleural_effusion' not in structured findings",
+        "type": "ADDED_FINDING"
+      },
+      {
+        "sentence": "there is pulmonary opacity, pleural effusion or pneumothorax.",
+        "reason": "'pneumothorax' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "NEGATION_FLIP"
+  },
+  {
+    "case_id": "CXR2216_IM-0821-85075001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is pleural effusion or pneumothorax.",
+        "reason": "'pleural_effusion' not in structured findings",
+        "type": "ADDED_FINDING"
+      },
+      {
+        "sentence": "there is pleural effusion or pneumothorax.",
+        "reason": "'pneumothorax' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "NEGATION_FLIP"
+  },
+  {
+    "case_id": "CXR1469_IM-0303-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is pneumothorax.",
+        "reason": "'pneumothorax' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "NEGATION_FLIP"
+  },
+  {
+    "case_id": "CXR1951_IM-0619-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "there is consolidation, pneumothorax or large pleural effusion.",
+        "reason": "'pleural_effusion' not in structured findings",
+        "type": "ADDED_FINDING"
+      },
+      {
+        "sentence": "there is consolidation, pneumothorax or large pleural effusion.",
+        "reason": "'pneumothorax' not in structured findings",
+        "type": "ADDED_FINDING"
+      },
+      {
+        "sentence": "there is consolidation, pneumothorax or large pleural effusion.",
+        "reason": "'consolidation' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "NEGATION_FLIP"
+  },
+  {
+    "case_id": "CXR2158_IM-0776-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "moderate pulmonary edema.",
+        "reason": "'pulmonary_edema' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "ADDED_FINDING"
+  },
+  {
+    "case_id": "CXR3057_IM-1424-1001-0001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "small left rib fracture.",
+        "reason": "'fracture' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "ADDED_FINDING"
+  },
+  {
+    "case_id": "CXR3771_IM-1890-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "pacemaker.",
+        "reason": "'support_devices' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "ADDED_FINDING"
+  },
+  {
+    "case_id": "CXR3927_IM-2000-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "moderate left pneumothorax.",
+        "reason": "'pneumothorax' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "ADDED_FINDING"
+  },
+  {
+    "case_id": "CXR3355_IM-1609-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "moderate right pleural effusion.",
+        "reason": "'pleural_effusion' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "ADDED_FINDING"
+  },
+  {
+    "case_id": "CXR2030_IM-0675-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "moderate cardiomegaly.",
         "reason": "'cardiomegaly' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "ADDED_FINDING"
+  },
+  {
+    "case_id": "CXR1802_IM-0521-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "small left rib fracture.",
+        "reason": "'fracture' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "ADDED_FINDING"
+  },
+  {
+    "case_id": "CXR1579_IM-0376-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "large left pneumothorax.",
+        "reason": "'pneumothorax' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "ADDED_FINDING"
+  },
+  {
+    "case_id": "CXR3169_IM-1492-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "moderate right pneumothorax.",
+        "reason": "'pneumothorax' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "ADDED_FINDING"
+  },
+  {
+    "case_id": "CXR3362_IM-1615-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "large pulmonary edema.",
+        "reason": "'pulmonary_edema' not in structured findings",
         "type": "ADDED_FINDING"
       }
     ],
@@ -3186,35 +4039,7 @@
     "flagged": true,
     "unsupported_claims": [
       {
-        "sentence": "There is moderate pulmonary edema.",
-        "reason": "'pulmonary_edema' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR3899_IM-1978-1001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is moderate pulmonary opacity.",
-        "reason": "'opacity' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR2212_IM-0819-1001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is severe cardiomegaly.",
+        "sentence": "large cardiomegaly.",
         "reason": "'cardiomegaly' not in structured findings",
         "type": "ADDED_FINDING"
       }
@@ -3224,224 +4049,11 @@
     "true_error_type": "ADDED_FINDING"
   },
   {
-    "case_id": "CXR1481_IM-0312-2001",
+    "case_id": "CXR2078_IM-0710-1001",
     "flagged": true,
     "unsupported_claims": [
       {
-        "sentence": "There is severe consolidation.",
-        "reason": "'consolidation' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR3233_IM-1530-1001",
-    "flagged": true,
-    "unsupported_claims": [],
-    "missing_findings": [
-      {
-        "label": "atelectasis",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
-    "is_corrupted": true,
-    "true_error_type": "OMITTED_FINDING"
-  },
-  {
-    "case_id": "CXR3768_IM-1887-1001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is moderate pleural effusion.",
-        "reason": "'pleural_effusion' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR918_IM-2420-4001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is severe consolidation.",
-        "reason": "'consolidation' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR3225_IM-1525-1001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is moderate a fracture.",
-        "reason": "'fracture' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR2294_IM-0876-1001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is severe support devices.",
-        "reason": "'support_devices' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR2988_IM-1375-1001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is moderate pulmonary opacity.",
-        "reason": "'opacity' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR470_IM-2099-2001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is moderate pulmonary opacity.",
-        "reason": "'opacity' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR235_IM-0915-2001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is mild consolidation.",
-        "reason": "'consolidation' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [
-      {
-        "label": "opacity",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      },
-      {
-        "label": "support_devices",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR1026_IM-0021-2002",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is severe pleural effusion.",
-        "reason": "'pleural_effusion' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR3565_IM-1750-1001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is moderate pleural effusion.",
-        "reason": "'pleural_effusion' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR3468_IM-1684-0001-0001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is mild support devices.",
-        "reason": "'support_devices' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [
-      {
-        "label": "opacity",
-        "reason": "structured finding not positively mentioned in report",
-        "type": "OMITTED_FINDING"
-      }
-    ],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR2684_IM-1157-1001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is mild atelectasis.",
-        "reason": "'atelectasis' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR142_IM-0267-1001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is mild pneumothorax.",
-        "reason": "'pneumothorax' not in structured findings",
-        "type": "ADDED_FINDING"
-      }
-    ],
-    "missing_findings": [],
-    "is_corrupted": true,
-    "true_error_type": "ADDED_FINDING"
-  },
-  {
-    "case_id": "CXR710_IM-2273-1001",
-    "flagged": true,
-    "unsupported_claims": [
-      {
-        "sentence": "There is mild pulmonary edema.",
+        "sentence": "large pulmonary edema.",
         "reason": "'pulmonary_edema' not in structured findings",
         "type": "ADDED_FINDING"
       }
@@ -3451,12 +4063,12 @@
     "true_error_type": "ADDED_FINDING"
   },
   {
-    "case_id": "CXR69_IM-2258-1001",
+    "case_id": "CXR1368_IM-0237-1001",
     "flagged": true,
     "unsupported_claims": [
       {
-        "sentence": "There is moderate a fracture.",
-        "reason": "'fracture' not in structured findings",
+        "sentence": "moderate right opacity.",
+        "reason": "'opacity' not in structured findings",
         "type": "ADDED_FINDING"
       }
     ],
@@ -3465,12 +4077,12 @@
     "true_error_type": "ADDED_FINDING"
   },
   {
-    "case_id": "CXR2237_IM-0834-2002",
+    "case_id": "CXR2578_IM-1078-1001",
     "flagged": true,
     "unsupported_claims": [
       {
-        "sentence": "There is mild atelectasis.",
-        "reason": "'atelectasis' not in structured findings",
+        "sentence": "large pulmonary edema.",
+        "reason": "'pulmonary_edema' not in structured findings",
         "type": "ADDED_FINDING"
       }
     ],
@@ -3479,12 +4091,26 @@
     "true_error_type": "ADDED_FINDING"
   },
   {
-    "case_id": "CXR2788_IM-1222-1001",
+    "case_id": "CXR1853_IM-0555-1001",
     "flagged": true,
     "unsupported_claims": [
       {
-        "sentence": "There is moderate a fracture.",
-        "reason": "'fracture' not in structured findings",
+        "sentence": "left pleural effusion.",
+        "reason": "'pleural_effusion' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "ADDED_FINDING"
+  },
+  {
+    "case_id": "CXR3250_IM-1540-1001-0001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "small right opacity.",
+        "reason": "'opacity' not in structured findings",
         "type": "ADDED_FINDING"
       }
     ],
@@ -3497,8 +4123,120 @@
     "flagged": true,
     "unsupported_claims": [
       {
-        "sentence": "There is severe consolidation.",
+        "sentence": "moderate cardiomegaly.",
+        "reason": "'cardiomegaly' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "ADDED_FINDING"
+  },
+  {
+    "case_id": "CXR701_IM-2266-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "moderate rib fracture.",
+        "reason": "'fracture' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "ADDED_FINDING"
+  },
+  {
+    "case_id": "CXR1773_IM-0506-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "small airspace consolidation.",
         "reason": "'consolidation' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "ADDED_FINDING"
+  },
+  {
+    "case_id": "CXR3200_IM-1512-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "heart size is normal and the lungs are clear moderate right opacity.",
+        "reason": "'opacity' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "ADDED_FINDING"
+  },
+  {
+    "case_id": "CXR3890_IM-1973-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "small airspace consolidation.",
+        "reason": "'consolidation' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "ADDED_FINDING"
+  },
+  {
+    "case_id": "CXR3978_IM-2037-0001-0001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "small airspace consolidation.",
+        "reason": "'consolidation' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "ADDED_FINDING"
+  },
+  {
+    "case_id": "CXR1797_IM-0517-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "large right atelectasis.",
+        "reason": "'atelectasis' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "ADDED_FINDING"
+  },
+  {
+    "case_id": "CXR3285_IM-1566-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "pacemaker.",
+        "reason": "'support_devices' not in structured findings",
+        "type": "ADDED_FINDING"
+      }
+    ],
+    "missing_findings": [],
+    "is_corrupted": true,
+    "true_error_type": "ADDED_FINDING"
+  },
+  {
+    "case_id": "CXR261_IM-1100-1001",
+    "flagged": true,
+    "unsupported_claims": [
+      {
+        "sentence": "small rib fracture.",
+        "reason": "'fracture' not in structured findings",
         "type": "ADDED_FINDING"
       }
     ],

@@ -1,0 +1,37 @@
+{
+  "tp": 120,
+  "fn": 0,
+  "fp": 0,
+  "tn": 300,
+  "precision": 1.0,
+  "recall": 1.0,
+  "false_positive_rate": 0.0,
+  "recall_by_error_type": {
+    "ADDED_FINDING": {
+      "caught": 25,
+      "total": 25
+    },
+    "LATERALITY_FLIP": {
+      "caught": 25,
+      "total": 25
+    },
+    "NEGATION_FLIP": {
+      "caught": 25,
+      "total": 25
+    },
+    "OMITTED_FINDING": {
+      "caught": 23,
+      "total": 23
+    },
+    "SEVERITY_FLIP": {
+      "caught": 22,
+      "total": 22
+    }
+  },
+  "false_positive_causes": {},
+  "precision_at_prevalence": {
+    "0.02": 1.0,
+    "0.05": 1.0,
+    "0.1": 1.0
+  }
+}
