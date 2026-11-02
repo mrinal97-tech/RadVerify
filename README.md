@@ -91,9 +91,19 @@ These are near-perfect **because truth and checker share a parser**. They show t
 
 | Metric | Value |
 |---|---|
-| Labeller precision / recall vs hand labels | _to fill_ |
-| Clean reports wrongly flagged (of 50) | _to fill_ |
-| Recall on ADDED_FINDING / NEGATION_FLIP | _to fill_ |
+| Labeller precision / recall vs independent labels | 0.77 / 0.87 |
+| Clean reports wrongly flagged (of 50) | 16 |
+| Recall on ADDED_FINDING / NEGATION_FLIP | 43/43, 24/24 |
+
+Labels were produced with Claude and reviewed by me (judgement calls are in the `notes` column of `data/gold_sheet.csv`).
+
+**What this shows:** recall holds up against independent truth, but 32% of clean reports are falsely flagged. The causes:
+- **Hedged language (~10 cases):** "atelectasis or scarring", "may reflect effusions", "possibly lingular atelectasis" are read as definite findings.
+- **Missing device vocabulary (4):** PICC, NG tube, feeding tube, central line, surgical clips.
+- **Missing opacity vocabulary (2):** "opacification", "infiltrates".
+- **Context (1):** "evaluation for pneumothorax is limited" read as pneumothorax present.
+
+**Next fix:** model hedging as its own state (present / absent / uncertain) instead of forcing a yes/no.
 
 ---
 
