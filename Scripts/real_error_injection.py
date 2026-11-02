@@ -1,179 +1,200 @@
-import argparse, copy, json, random, re
+"""
+real_error_injection.py
+
+Builds a BALANCED evaluation set from real IU chest X-ray reports.
+
+Five error types, each with its own quota:
+  ADDED_FINDING    - an absent finding is written into the report (IU style, mid-report)
+  OMITTED_FINDING  - the sentence carrying a real finding is removed
+  SEVERITY_FLIP    - e.g. "small effusion" -> "large effusion"
+  NEGATION_FLIP    - e.g. "no pneumothorax" -> "there is pneumothorax"
+  LATERALITY_FLIP  - e.g. "left effusion" -> "right effusion"
+
+Each clean report is used as the source of at most one corrupted copy.
+Every corruption is checked with lexicon.py so the error really exists in the text.
+"""
+
+import argparse
+import copy
+import json
+import random
+import re
+from collections import Counter
 from pathlib import Path
-from report_gen import LABEL_PHRASE, SEVERITY_PHRASE, _findings_to_sentence
-from real_data_adapter import SEVERITY_CUES
-from report_gen import LABEL_PHRASE, SEVERITY_PHRASE, _findings_to_sentence
-from real_data_adapter import SEVERITY_CUES
-from groundguard import _is_negated_mention
 
-random.seed(11)
-ALL_LABELS = list(LABEL_PHRASE.keys())
+import lexicon
+
+ALL_LABELS = list(lexicon.FINDING_PATTERNS)
+ERROR_TYPES = ["SEVERITY_FLIP", "LATERALITY_FLIP", "OMITTED_FINDING", "NEGATION_FLIP", "ADDED_FINDING"]
 
 
-def inject_added_finding(case: dict) -> dict:
-    c = copy.deepcopy(case)
-    present_labels = {f["label"] for f in c["findings"]}
-    candidates = [l for l in ALL_LABELS if l not in present_labels]
-    if not candidates:
-        return None
-    fake = {"label": random.choice(candidates), "present": True,
-            "severity": random.choice(list(SEVERITY_PHRASE)), "laterality": None}
-    fake_sentence = _findings_to_sentence(fake)
-    c["report"] = c["report"].replace("FINDINGS: ", f"FINDINGS: {fake_sentence} ")
-    c["error_type"] = "ADDED_FINDING"
-    c["error_detail"] = fake_sentence
-    return c
+def _body(report: str):
+    """Split 'FINDINGS: ... \\nIMPRESSION: ...' into (findings_text, tail)."""
+    m = re.match(r"FINDINGS:\s*(.*?)(\nIMPRESSION:.*)?$", report, flags=re.S)
+    return m.group(1), (m.group(2) or "")
 
 
-def inject_omitted_finding(case: dict) -> dict:
-    """
-    Remove a finding from a real report.
-
-    The corruption is accepted only if the targeted finding
-    is no longer positively represented after the sentence
-    is removed.
-    """
-
-    candidates = c_findings_with_sentence(case)
-
-    if not candidates:
-        return None
-
-    # Try candidates in random order until we find
-    # a genuine omission.
-    random.shuffle(candidates)
-
-    for dropped in candidates:
-
-        c = copy.deepcopy(case)
-
-        sentence = dropped["source_sentence"]
-
-        if sentence not in c["report"]:
-            continue
-
-        corrupted_report = (
-            c["report"]
-            .replace(sentence, "")
-            .replace("..", ".")
-            .replace("  ", " ")
-        )
-
-        # -------------------------------------------------
-        # Verify that the finding was REALLY omitted.
-        #
-        # A source sentence can overlap with another
-        # sentence that still expresses the same finding.
-        # -------------------------------------------------
-
-        label = dropped["label"]
-
-        phrase = LABEL_PHRASE[label]
-        alternative_phrase = label.replace("_", " ")
-
-        still_present = False
-
-        for report_sentence in re.split(
-            r"(?<=[.!?])\s+",
-            corrupted_report
-        ):
-
-            low = report_sentence.lower()
-
-            positions = []
-
-            phrase_pos = low.find(phrase)
-
-            if phrase_pos != -1:
-                positions.append(phrase_pos)
-
-            alternative_pos = low.find(
-                alternative_phrase
-            )
-
-            if (
-                alternative_pos != -1
-                and alternative_pos != phrase_pos
-            ):
-                positions.append(alternative_pos)
-
-            for pos in positions:
-
-                # Negative mention does not count.
-                if not _is_negated_mention(
-                    report_sentence,
-                    pos
-                ):
-                    still_present = True
-                    break
-
-            if still_present:
-                break
-
-        # If another positive mention remains,
-        # this is NOT a valid omission.
-        if still_present:
-            continue
-
-        # -------------------------------------------------
-        # VALID OMISSION
-        # -------------------------------------------------
-
-        c["report"] = corrupted_report
-        c["error_type"] = "OMITTED_FINDING"
-        c["error_detail"] = sentence
-
-        return c
-
-    # No candidate produced a genuine omission.
-    return None
-
-
-def inject_severity_flip(case: dict) -> dict:
-    candidates = [f for f in c_findings_with_sentence(case) if f["severity"] != "unspecified"]
-    if not candidates:
-        return None
-    c = copy.deepcopy(case)
-    target = random.choice(candidates)
-    sentence = target["source_sentence"]
-    if sentence not in c["report"]:
-        return None
-    flip_map = {"mild": "severe", "moderate": "severe", "severe": "mild"}
-    new_severity = flip_map[target["severity"]]
-    old_cue = next((w for w in SEVERITY_CUES[target["severity"]] if w in sentence.lower()), None)
-    if old_cue is None:
-        return None
-    new_cue = SEVERITY_CUES[new_severity][0]
-    new_sentence = sentence.lower().replace(old_cue, new_cue, 1)
-    c["report"] = c["report"].replace(sentence, new_sentence)
-    c["error_type"] = "SEVERITY_FLIP"
-    c["error_detail"] = f"'{old_cue}' -> '{new_cue}' in: {sentence}"
-    return c
-
-
-def c_findings_with_sentence(case):
+def _with_findings_sentences(case):
     return [f for f in case["findings"] if f.get("source_sentence")]
 
 
-INJECTORS = [inject_added_finding, inject_omitted_finding, inject_severity_flip]
+# ---------------------------------------------------------
+# INJECTORS (each returns a corrupted copy or None)
+# ---------------------------------------------------------
+
+def inject_added_finding(case, rng):
+    present = {f["label"] for f in case["findings"]}
+    candidates = [l for l in ALL_LABELS
+                  if l not in present and not lexicon.is_positively_mentioned(case["report"], l)]
+    if not candidates:
+        return None
+    label = rng.choice(candidates)
+    sev = rng.choice(["small", "moderate", "large", ""])
+    side = rng.choice(["left", "right", ""]) if label in ("pleural_effusion", "pneumothorax", "opacity", "atelectasis", "fracture") else ""
+    new_sentence = " ".join(w for w in [sev, side, lexicon.WRITE_PHRASE[label]] if w) + "."
+
+    body, tail = _body(case["report"])
+    sentences = re.split(r"(?<=\.)\s+", body.strip())
+    pos = rng.randint(1, len(sentences)) if len(sentences) > 1 else len(sentences)
+    sentences.insert(pos, new_sentence)
+
+    c = copy.deepcopy(case)
+    c["report"] = "FINDINGS: " + " ".join(sentences) + tail
+    if not lexicon.is_positively_mentioned(c["report"], label):
+        return None
+    c["error_type"], c["error_detail"] = "ADDED_FINDING", new_sentence
+    return c
 
 
-def build_eval_set(clean_reports: list, error_rate: float = 0.20) -> list:
+def inject_omitted_finding(case, rng):
+    candidates = _with_findings_sentences(case)
+    rng.shuffle(candidates)
+    for f in candidates:
+        sentence = f["source_sentence"]
+        if sentence not in case["report"]:
+            continue
+        report = case["report"].replace(sentence, "").replace("..", ".").replace("  ", " ")
+        if lexicon.is_positively_mentioned(report, f["label"]):
+            continue  # another sentence still states the finding: not a real omission
+        c = copy.deepcopy(case)
+        c["report"] = report
+        c["error_type"], c["error_detail"] = "OMITTED_FINDING", sentence
+        return c
+    return None
+
+
+def inject_severity_flip(case, rng):
+    flip = {"mild": "large", "moderate": "small", "severe": "small"}
+    for f in _with_findings_sentences(case):
+        if f["severity"] == "unspecified":
+            continue
+        sentence = f["source_sentence"]
+        if sentence not in case["report"]:
+            continue
+        cue = next((w for w in lexicon.SEVERITY_CUES[f["severity"]]
+                    if re.search(rf"\b{w}\b", sentence.lower())), None)
+        if cue is None:
+            continue
+        new_sentence = re.sub(rf"\b{cue}\b", flip[f["severity"]], sentence.lower(), count=1)
+        c = copy.deepcopy(case)
+        c["report"] = case["report"].replace(sentence, new_sentence)
+        c["error_type"] = "SEVERITY_FLIP"
+        c["error_detail"] = f"'{cue}' -> '{flip[f['severity']]}' in: {sentence}"
+        return c
+    return None
+
+
+def inject_laterality_flip(case, rng):
+    swap = {"left": "right", "right": "left"}
+    for f in _with_findings_sentences(case):
+        side = f.get("laterality")
+        if side not in swap:
+            continue
+        sentence = f["source_sentence"]
+        if sentence not in case["report"] or not re.search(rf"\b{side}\b", sentence.lower()):
+            continue
+        new_sentence = re.sub(rf"\b{side}\b", swap[side], sentence.lower())
+        c = copy.deepcopy(case)
+        c["report"] = case["report"].replace(sentence, new_sentence)
+        c["error_type"] = "LATERALITY_FLIP"
+        c["error_detail"] = f"'{side}' -> '{swap[side]}' in: {sentence}"
+        return c
+    return None
+
+
+NEG_PREFIX = re.compile(
+    r"^\s*no\s+(?:evidence of\s+)?(?:(?:acute|focal|significant|definite|visible|large|other)\s+)*",
+    flags=re.I,
+)
+
+
+def inject_negation_flip(case, rng):
+    """Turn a negated finding into a positive one: 'no pneumothorax' -> 'there is pneumothorax'."""
+    present = {f["label"] for f in case["findings"]}
+    sentences = lexicon.split_sentences(_body(case["report"])[0])
+    rng.shuffle(sentences)
+    for sent in sentences:
+        if not NEG_PREFIX.match(sent):
+            continue
+        labels = [l for l in ALL_LABELS
+                  if l not in present and lexicon.mentions(sent, l) and not lexicon.positive_mentions(sent, l)]
+        if not labels:
+            continue
+        rest = NEG_PREFIX.sub("", sent)
+        if re.search(r"\b(?:no|not|without)\b", rest.lower()):
+            continue  # keep it to simple single-negation sentences
+        new_sent = "there is " + rest
+        c = copy.deepcopy(case)
+        c["report"] = case["report"].replace(sent, new_sent, 1)
+        if not any(lexicon.is_positively_mentioned(c["report"], l) for l in labels):
+            continue
+        c["error_type"] = "NEGATION_FLIP"
+        c["error_detail"] = f"'{sent}' -> '{new_sent}'"
+        return c
+    return None
+
+
+INJECTORS = {
+    "ADDED_FINDING": inject_added_finding,
+    "OMITTED_FINDING": inject_omitted_finding,
+    "SEVERITY_FLIP": inject_severity_flip,
+    "NEGATION_FLIP": inject_negation_flip,
+    "LATERALITY_FLIP": inject_laterality_flip,
+}
+
+
+def build_eval_set(clean_reports: list, per_type: int = 25, seed: int = 11) -> list:
+    rng = random.Random(seed)
     eval_set = []
     for case in clean_reports:
         c = copy.deepcopy(case)
         c["is_corrupted"], c["error_type"], c["error_detail"] = False, "CLEAN", None
         eval_set.append(c)
-    n_to_corrupt = int(len(clean_reports) * error_rate)
-    targets = random.sample(clean_reports, k=min(n_to_corrupt, len(clean_reports)))
-    for case in targets:
-        random.shuffle(INJECTORS)
-        for injector in INJECTORS:
-            corrupted = injector(case)
-            if corrupted is not None:
-                corrupted["is_corrupted"] = True
-                eval_set.append(corrupted)
+
+    pool = list(clean_reports)
+    rng.shuffle(pool)
+    used = set()
+    counts = Counter()
+
+    # Scarce error types first, so they get first pick of suitable reports.
+    for etype in ERROR_TYPES:
+        for case in pool:
+            if counts[etype] >= per_type:
                 break
+            if case["case_id"] in used:
+                continue
+            corrupted = INJECTORS[etype](case, rng)
+            if corrupted is None:
+                continue
+            corrupted["is_corrupted"] = True
+            eval_set.append(corrupted)
+            used.add(case["case_id"])
+            counts[etype] += 1
+
+    print("Corrupted cases per type:")
+    for etype in ERROR_TYPES:
+        note = "" if counts[etype] >= per_type else "  <- below quota: use more source reports (--limit in real_data_adapter.py)"
+        print(f"  {etype:16s} {counts[etype]:3d}{note}")
     return eval_set
 
 
@@ -181,10 +202,12 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--in", dest="inp", default="data/real_clean_reports.json")
     ap.add_argument("--out", default="data/real_eval_set.json")
-    ap.add_argument("--error_rate", type=float, default=0.20)
+    ap.add_argument("--per_type", type=int, default=25)
+    ap.add_argument("--seed", type=int, default=11)
     args = ap.parse_args()
-    clean = json.load(open(args.inp))
-    eval_set = build_eval_set(clean, error_rate=args.error_rate)
+    clean = json.load(open(args.inp, encoding="utf-8"))
+    eval_set = build_eval_set(clean, per_type=args.per_type, seed=args.seed)
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
-    json.dump(eval_set, open(args.out, "w"), indent=2)
-    print(f"Wrote {len(eval_set)} cases -> {args.out}")
+    json.dump(eval_set, open(args.out, "w", encoding="utf-8"), indent=2)
+    n_bad = sum(e["is_corrupted"] for e in eval_set)
+    print(f"Wrote {len(eval_set)} cases ({n_bad} corrupted, {len(eval_set) - n_bad} clean) -> {args.out}")
