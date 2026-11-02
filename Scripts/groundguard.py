@@ -1,4 +1,3 @@
-
 """
 groundguard.py
 
@@ -6,12 +5,16 @@ The verification layer for RadVerify.
 
 Runs TWO checks:
   1. GROUNDEDNESS (precision)
-     - Every claim in the report must trace back to a structured finding.
+     - Every positive claim in the report must trace back to a structured
+       finding, with matching severity and laterality.
 
   2. COMPLETENESS (recall)
-     - Every structured finding must appear in the generated report.
+     - Every structured finding must be positively mentioned in the report.
 
 A case is flagged if either check fails.
+
+Vocabulary, negation, severity and laterality rules all come from lexicon.py,
+shared with the labeller and the error injector.
 
 Backends:
   - heuristic : deterministic rule-based checker
@@ -20,124 +23,9 @@ Backends:
 
 import argparse
 import json
-import os
-import re
 from pathlib import Path
 
-from report_gen import LABEL_PHRASE, SEVERITY_PHRASE
-
-
-# ---------------------------------------------------------
-# NEGATION HANDLING
-# ---------------------------------------------------------
-
-NEGATION_CUES = [
-    "no ",
-    "no evidence of",
-    "no focal",
-    "without",
-    "negative for",
-    "free of",
-    "clear of",
-    "absence of",
-    "rule out",
-    "not seen",
-    "resolved",
-]
-
-
-def _is_negated_mention(sentence: str, phrase_pos: int) -> bool:
-    """
-    Check whether a finding is being negated.
-
-    Example:
-        "There is no pneumothorax."
-
-    The word 'pneumothorax' exists in the sentence,
-    but it is NOT being claimed as present.
-    """
-
-    window = sentence[:phrase_pos].lower()
-
-    return any(
-        cue in window
-        for cue in NEGATION_CUES
-    )
-
-
-# ---------------------------------------------------------
-# SENTENCE SPLITTING
-# ---------------------------------------------------------
-
-def _split_sentences(report: str) -> list:
-
-    body = report.strip()
-
-    body = re.sub(
-        r"\bFINDINGS:\s*",
-        "",
-        body,
-        flags=re.IGNORECASE
-    )
-
-    body = re.sub(
-        r"\bIMPRESSION:\s*",
-        "",
-        body,
-        flags=re.IGNORECASE
-    )
-
-    return [
-        sentence.strip()
-        for sentence in re.split(
-            r"(?<=[.!?])\s+",
-            body
-        )
-        if sentence.strip()
-    ]
-    
-def _finding_is_positively_mentioned(report: str, label: str) -> bool:
-    """
-    Return True only if the finding is positively mentioned.
-
-    Negated mentions such as:
-        no fracture
-        no pneumothorax
-        without pleural effusion
-
-    do NOT count as evidence that the finding is present.
-    """
-
-    sentences = _split_sentences(report)
-
-    phrase = LABEL_PHRASE[label]
-    alternative_phrase = label.replace("_", " ")
-
-    for sentence in sentences:
-
-        low = sentence.lower()
-
-        positions = []
-
-        phrase_pos = low.find(phrase)
-
-        if phrase_pos != -1:
-            positions.append(phrase_pos)
-
-        alternative_pos = low.find(alternative_phrase)
-
-        if (
-            alternative_pos != -1
-            and alternative_pos != phrase_pos
-        ):
-            positions.append(alternative_pos)
-
-        for pos in positions:
-
-            if not _is_negated_mention(sentence, pos):
-                return True
-
-    return False
+import lexicon
 
 
 # ---------------------------------------------------------
@@ -147,156 +35,78 @@ def _finding_is_positively_mentioned(report: str, label: str) -> bool:
 def check_heuristic(case: dict) -> dict:
 
     report = case["report"]
-    findings = case["findings"]
-
-    findings_by_label = {
-        f["label"]: f
-        for f in findings
-    }
-
-    sentences = _split_sentences(report)
+    findings_by_label = {f["label"]: f for f in case["findings"]}
 
     unsupported = []
     mentioned_labels = set()
 
     # -----------------------------------------------------
-    # GROUNDEDNESS
+    # GROUNDEDNESS: every positive claim must be supported
     # -----------------------------------------------------
 
-    for sent in sentences:
+    for sent in lexicon.split_sentences(report):
 
-        low = sent.lower().strip()
+        for label in lexicon.FINDING_PATTERNS:
 
-        for label, phrase in LABEL_PHRASE.items():
-
-            alternatives = {
-                phrase.lower(),
-                label.replace("_", " ").lower(),
-            }
-
-            found_phrase = None
-            found_pos = -1
-
-            for candidate in alternatives:
-
-                pos = low.find(candidate)
-
-                if pos != -1:
-                    found_phrase = candidate
-                    found_pos = pos
-                    break
-
-            if found_pos == -1:
+            spans = lexicon.positive_mentions(sent, label)
+            if not spans:
                 continue
 
-            # -------------------------------------------------
-            # NEGATIVE / NORMAL STATEMENT
-            # -------------------------------------------------
-
-            if _is_negated_mention(
-                sent,
-                found_pos
-            ):
-                continue
-
-            # -------------------------------------------------
-            # POSITIVE FINDING
-            # -------------------------------------------------
-
+            start, end = spans[0]
             mentioned_labels.add(label)
-
             gt = findings_by_label.get(label)
 
-            # -------------------------------------------------
-            # ADDED FINDING
-            # -------------------------------------------------
-
+            # Finding claimed but not in structured findings
             if gt is None:
-
                 unsupported.append({
                     "sentence": sent,
-                    "reason": (
-                        f"'{label}' not in structured findings"
-                    ),
+                    "reason": f"'{label}' not in structured findings",
                     "type": "ADDED_FINDING",
                 })
-
                 continue
 
-            # -------------------------------------------------
-            # SEVERITY
-            # -------------------------------------------------
+            # Severity must match when both sides specify it
+            sev = lexicon.severity_at(sent, start, end)
+            gt_sev = gt.get("severity")
+            if sev != "unspecified" and gt_sev not in (None, "unspecified") and sev != gt_sev:
+                unsupported.append({
+                    "sentence": sent,
+                    "reason": f"severity '{sev}' contradicts finding severity '{gt_sev}'",
+                    "type": "SEVERITY_FLIP",
+                })
 
-            sev_in_sentence = None
-
-            for severity in SEVERITY_PHRASE:
-
-                if re.search(
-                    rf"\b{re.escape(severity)}\b",
-                    low
-                ):
-
-                    sev_in_sentence = severity
-                    break
-
-            if sev_in_sentence:
-
-                gt_severity = gt.get(
-                    "severity"
-                )
-
-                # Ignore unspecified ground truth severity
-                if (
-                    gt_severity
-                    and gt_severity != "unspecified"
-                    and sev_in_sentence != gt_severity
-                ):
-
-                    unsupported.append({
-                        "sentence": sent,
-                        "reason": (
-                            f"severity '{sev_in_sentence}' "
-                            f"contradicts finding severity "
-                            f"'{gt_severity}'"
-                        ),
-                        "type": "SEVERITY_FLIP",
-                    })
+            # Laterality: flag only a clear left/right contradiction.
+            # A bilateral finding is consistent with either side being mentioned.
+            lat = lexicon.laterality_at(sent, start, end)
+            gt_lat = gt.get("laterality")
+            if lat in ("left", "right") and gt_lat in ("left", "right") and lat != gt_lat:
+                unsupported.append({
+                    "sentence": sent,
+                    "reason": f"laterality '{lat}' contradicts finding laterality '{gt_lat}'",
+                    "type": "LATERALITY_FLIP",
+                })
 
     # -----------------------------------------------------
-    # COMPLETENESS
+    # COMPLETENESS: every structured finding must appear
     # -----------------------------------------------------
 
-    missing = []
-
-    for finding in findings:
-
-      label = finding["label"]
-
-      if not _finding_is_positively_mentioned(
-        report,
-        label
-    ):
-
-        missing.append({
+    missing = [
+        {
             "label": label,
-            "reason": (
-                "structured finding not positively "
-                "mentioned in report"
-            ),
+            "reason": "structured finding not positively mentioned in report",
             "type": "OMITTED_FINDING",
-        })
-    # -----------------------------------------------------
-    # FINAL VERDICT
-    # -----------------------------------------------------
+        }
+        for label in findings_by_label
+        if label not in mentioned_labels
+    ]
 
     return {
         "case_id": case["case_id"],
-        "flagged": bool(
-            unsupported or missing
-        ),
+        "flagged": bool(unsupported or missing),
         "unsupported_claims": unsupported,
         "missing_findings": missing,
     }
+
 
 # ---------------------------------------------------------
 # OLLAMA CHECKER
@@ -389,6 +199,10 @@ fracture
 support_devices
 = line/tube/device
 = radiopaque support device
+= catheter
+= pacemaker / AICD
+= sternotomy wires
+= drainage tube
 
 ====================================================
 NEGATIVE STATEMENTS
@@ -475,6 +289,25 @@ SEVERITY_FLIP.
 
 Do NOT call a severity flip when the finding is absent.
 That situation is ADDED_FINDING.
+
+====================================================
+CHECK 2b — LATERALITY
+====================================================
+
+If a structured finding has a laterality (left / right / bilateral)
+and the report states a DIFFERENT side for that finding,
+report it in unsupported_claims with type "LATERALITY_FLIP".
+
+Example:
+
+STRUCTURED:
+pleural_effusion, laterality = left
+
+REPORT:
+"Small right pleural effusion."
+
+Result:
+LATERALITY_FLIP.
 
 ====================================================
 CHECK 3 — COMPLETENESS
